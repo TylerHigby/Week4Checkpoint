@@ -1,1 +1,29 @@
 /* BASIC STYLES HERE */
+body {
+
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+
+  background-color: black;
+}
+
+footer {
+
+  backdrop-filter: blur(3px);
+}
+
+.blurBG {
+  backdrop-filter: blur(3px);
+}
+
+
+.quoteAuthor {
+  opacity: 0;
+}
+
+.quoteAuthor:hover {
+  opacity: 1;
+}

@@ -12,17 +12,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>Week4Checkpoint</title>
+  <title>Week4Checkpoint-Inspire</title>
 </head>
 
 <body>
   <!-- SECTION -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
-      <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ml-2">Week4Checkpoint</span>
+    <nav class="navbar navbar-expand px-2 text-white">
+      <a id="authortag">
+        <span class="text-white ">Inspire</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <!-- NAVLINKS -->
-          <a href="#/about" class="nav-link">About</a>
+          <!-- <a href="#/about" class="nav-link">About</a> -->
         </div>
       </div>
       <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
@@ -41,9 +39,9 @@
   <!-- SECTION -->
   <main>
 
-    <section id="auth-template">
-      <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
-      <div class="container-fluid">
+    <!-- <section id="auth-template"> -->
+    <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
+    <!-- <div class="container-fluid">
         <div class="row my-3">
           <div class="col-lg-5" id="auth-settings">
             <div class="card p-2 skeleton-loader">
@@ -62,19 +60,38 @@
           </div>
         </div>
       </div>
-    </section>
-
+    </section> -->
+    <!-- //!SECTION  -->
     <section id="router-view">
       <!-- primary viewport -->
     </section>
+
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-9 quotation" id="Quote">
+          <!-- <p class="text-center text-white blurBG border border-1 rounded">"Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit.
+            Facilis,
+            odio
+            blanditiis! Sapiente, cum qui ipsam eveniet eligendi, voluptas, impedit rerum deserunt natus nisi non quia
+            nemo ipsum vitae aut hic!"</p> -->
+        </div>
+        <div class="blurBG col-3 text-center text-white border border-1 rounded">
+          <h1>TO DO <i class="mdi mdi-chevron-down"></i></h1>
+        </div>
+      </section>
+
 
 
   </main>
 
   <!-- SECTION -->
-  <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
+  <footer class="text-white">
+    <div class="row p-0 m-0 mt-5 mb-5">
+      <div id="Weather" class="col-4 text-center fs-3 border border-1 rounded-pill">Weather</div>
+      <div id="time" class="col-4 text-center fs-3 border border-1 border rounded-pill">Clock</div>
+      <div class="col-4 text-center fs-3 border border-1 rounded-pill">User</div>
     </div>
   </footer>
 

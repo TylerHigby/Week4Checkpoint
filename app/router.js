@@ -1,6 +1,10 @@
 import { AboutController } from "./controllers/AboutController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { ImageController } from "./controllers/ImageController.js";
+import { QuoteController } from "./controllers/QuoteController.js";
+import { TodoController } from "./controllers/TodoController.js";
 import { ValuesController } from "./controllers/ValuesController.js";
+import { WeatherController } from "./controllers/WeatherController.js";
 import { AboutView } from "./views/AboutView.js";
 
 /**
@@ -10,15 +14,8 @@ import { AboutView } from "./views/AboutView.js";
 export const router = [
   {
     path: '',
-    controller: HomeController,
-    view: /*html*/`
-    <div class="card">
-      <div class="card-body">
-        <p>Home Page</p>
-        <button class="btn btn-dark" onclick="app.HomeController.testButton()">😎</button>
-      </div>
-    </div>
-    `
+    controller: [ImageController, QuoteController, WeatherController, TodoController],
+
   },
   {
     path: '#/about',

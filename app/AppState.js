@@ -4,6 +4,14 @@ import { isValidProp } from './utils/IsValidProp.js'
 import { loadState } from './utils/Store.js'
 
 class ObservableAppState extends EventEmitter {
+  /** @type {import('./models/Image.js').Image || null }*/
+  Image = null
+  /** @type {import('./models/QuoteModel.js').Quote} */
+  Quote = null
+  /** @type {import('./models/Weather.js').Weather} */
+  Weather = null
+  /** @type {import('./models/Todo.js').Todo} */
+  Todo = []
   page = ''
   user = null
   /** @type {import('./models/Account.js').Account | null} */
